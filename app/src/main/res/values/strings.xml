@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Extensions</string>
+    <string name="no_file_extension_selected">No File Extension Selected</string>
+    <string name="extension_name">extension name</string>
+    <string name="there_are_no_files_to_display">There are no files to display</string>
+    <string name="todo">TODO</string>
+</resources>
