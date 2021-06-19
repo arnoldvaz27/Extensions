@@ -171,6 +171,41 @@ public class MainActivity extends AppCompatActivity {
             selected.setText("MP3 files are displayed");
             na.setVisibility(View.GONE);
         }
+        if(item.getItemId() == R.id.amr){
+            fileEnd = "AMR";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("AMR files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.aac){
+            fileEnd = "AAC";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("AAC files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.aax){
+            fileEnd = "AAX";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("AAX files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.aiff){
+            fileEnd = "AIFF";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("AIFF files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.opus){
+            fileEnd = "OPUS";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("OPUS files are displayed");
+            na.setVisibility(View.GONE);
+        }
         if(item.getItemId() == R.id.pdf){
             fileEnd = "PDF";
             displayPdf();
@@ -248,13 +283,6 @@ public class MainActivity extends AppCompatActivity {
             selected.setText("PS files are displayed");
             na.setVisibility(View.GONE);
         }
-        if(item.getItemId() == R.id.aac){
-            fileEnd = "AAC";
-            displayPdf();
-            selected.setVisibility(View.VISIBLE);
-            selected.setText("AAC files are displayed");
-            na.setVisibility(View.GONE);
-        }
         if(item.getItemId() == R.id.html){
             fileEnd = "HTML";
             displayPdf();
@@ -281,6 +309,13 @@ public class MainActivity extends AppCompatActivity {
             displayPdf();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JAVA files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.py){
+            fileEnd = "PYTHON";
+            displayPdf();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("PYTHON files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.json){

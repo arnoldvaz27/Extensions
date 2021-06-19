@@ -2,138 +2,153 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Info"
+    <item android:title="@string/info"
         android:id="@+id/info"
         android:icon="@drawable/info_stylish"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
-    <item android:title="IMAGES"
+    <item android:title="@string/images"
         android:id="@+id/image"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="JPG"
+            <item android:title="@string/jpg"
                 android:id="@+id/jpg"
                 app:showAsAction="never"/>
-            <item android:title="JPEG"
+            <item android:title="@string/jpeg"
                 android:id="@+id/jpeg"
                 app:showAsAction="never"/>
-            <item android:title="PNG"
+            <item android:title="@string/png"
                 android:id="@+id/png"
                 app:showAsAction="never"/>
 
-            <item android:title="SVG"
+            <item android:title="@string/svg"
                 android:id="@+id/svg"
                 app:showAsAction="never"/>
 
-            <item android:title="GIF"
+            <item android:title="@string/gif"
                 android:id="@+id/gif"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="MUSICS"
+    <item android:title="@string/musics"
         android:id="@+id/music"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="MP4"
+            <item android:title="@string/mp4"
                 android:id="@+id/mp4"
                 app:showAsAction="never"/>
-            <item android:title="MP3"
+            <item android:title="@string/mp3"
                 android:id="@+id/mp3"
+                app:showAsAction="never"/>
+            <item android:title="@string/amr"
+                android:id="@+id/amr"
+                app:showAsAction="never"/>
+            <item android:title="@string/aac"
+                android:id="@+id/aac"
+                app:showAsAction="never"/>
+            <item android:title="@string/aax"
+                android:id="@+id/aax"
+                app:showAsAction="never"/>
+            <item android:title="@string/aiff"
+                android:id="@+id/aiff"
+                app:showAsAction="never"/>
+            <item android:title="@string/opus"
+                android:id="@+id/opus"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="FILES"
+    <item android:title="@string/files"
         android:id="@+id/file"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="PDF"
+            <item android:title="@string/pdf"
                 android:id="@+id/pdf"
                 app:showAsAction="never"/>
-            <item android:title="Ms/Google DOC"
+            <item android:title="@string/ms_google_doc"
                 android:id="@+id/doc"
                 app:showAsAction="never"/>
-            <item android:title="Ms/Google PPT"
+            <item android:title="@string/ms_google_ppt"
                 android:id="@+id/ppt"
                 app:showAsAction="never"/>
-            <item android:title="Ms/Google XLS"
+            <item android:title="@string/ms_google_xls"
                 android:id="@+id/xls"
                 app:showAsAction="never"/>
-            <item android:title="Ms/Google CSV"
+            <item android:title="@string/ms_google_csv"
                 android:id="@+id/csv"
                 app:showAsAction="never"/>
-            <item android:title="TXT"
+            <item android:title="@string/txt"
                 android:id="@+id/txt"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="COMPRESS FILES"
+    <item android:title="@string/compress_files"
         android:id="@+id/compressFile"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="ZIP"
+            <item android:title="@string/zip"
                 android:id="@+id/zip"
                 app:showAsAction="never"/>
-            <item android:title="TAR"
+            <item android:title="@string/tar"
                 android:id="@+id/tar"
                 app:showAsAction="never"/>
-            <item android:title="RAR"
+            <item android:title="@string/rar"
                 android:id="@+id/rar"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="ADOBE FILES"
+    <item android:title="@string/adobe_files"
         android:id="@+id/adobeFile"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="AI"
+            <item android:title="@string/ai"
                 android:id="@+id/ai"
                 app:showAsAction="never"/>
-            <item android:title="PS"
+            <item android:title="@string/ps"
                 android:id="@+id/ps"
-                app:showAsAction="never"/>
-            <item android:title="AAC"
-                android:id="@+id/aac"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="CODE FILES"
+    <item android:title="@string/code_files"
         android:id="@+id/codeFile"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="HTML"
+            <item android:title="@string/html"
                 android:id="@+id/html"
                 app:showAsAction="never"/>
-            <item android:title="CSS"
+            <item android:title="@string/css"
                 android:id="@+id/css"
                 app:showAsAction="never"/>
-            <item android:title="JAVA SCRIPT"
+            <item android:title="@string/java_script"
                 android:id="@+id/js"
                 app:showAsAction="never"/>
-            <item android:title="JAVA"
+            <item android:title="@string/java"
                 android:id="@+id/java"
                 app:showAsAction="never"/>
-            <item android:title="JSON"
+            <item android:title="@string/python"
+                android:id="@+id/py"
+                app:showAsAction="never"/>
+            <item android:title="@string/json"
                 android:id="@+id/json"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title="WINDOWS FILES"
+    <item android:title="@string/windows_files"
         android:id="@+id/windowsFile"
         app:showAsAction="never">
 
         <menu>
-            <item android:title="EXE"
+            <item android:title="@string/exe"
                 android:id="@+id/exe"
                 app:showAsAction="never"/>
         </menu>
     </item>
-    <item android:title=".NO EXTENSION FILES"
+    <item android:title="@string/no_extension_files"
         android:id="@+id/noExtFile"
         app:showAsAction="never" />
 </menu>

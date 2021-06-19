@@ -53,6 +53,21 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
             case "MP3":
                 holder.imageView.setImageResource(R.drawable.mp3);
                 break;
+            case "AMR":
+                holder.imageView.setImageResource(R.drawable.amr);
+                break;
+            case "AAC":
+                holder.imageView.setImageResource(R.drawable.aac);
+                break;
+            case "AAX":
+                holder.imageView.setImageResource(R.drawable.aax);
+                break;
+            case "AIFF":
+                holder.imageView.setImageResource(R.drawable.aiff);
+                break;
+            case "OPUS":
+                holder.imageView.setImageResource(R.drawable.opus);
+                break;
             case "PDF":
                 holder.imageView.setImageResource(R.drawable.pdf);
                 break;
@@ -86,9 +101,6 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
             case "PS":
                 holder.imageView.setImageResource(R.drawable.ps);
                 break;
-            case "AAC":
-                holder.imageView.setImageResource(R.drawable.aac);
-                break;
             case "HTML":
                 holder.imageView.setImageResource(R.drawable.html);
                 break;
@@ -100,6 +112,9 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
                 break;
             case "JAVA":
                 holder.imageView.setImageResource(R.drawable.java);
+                break;
+            case "PYTHON":
+                holder.imageView.setImageResource(R.drawable.py);
                 break;
             case "JSON":
                 holder.imageView.setImageResource(R.drawable.json);
