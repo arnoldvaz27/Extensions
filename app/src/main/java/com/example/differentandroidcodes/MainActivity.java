@@ -2,7 +2,10 @@ package com.example.differentandroidcodes;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
@@ -15,6 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressLint("SetTextI18n")
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements onFileSelectListener {
 
     private RecyclerView recyclerView;
     static String fileEnd = "";
@@ -50,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Dexter.withContext(MainActivity.this).withPermission(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-                displayPdf();
+                displayFile();
             }
 
             @Override
@@ -66,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public ArrayList<File> findPdf(File file) {
+    public ArrayList<File> findFile(File file) {
         ArrayList<File> arrayList = new ArrayList<>();
         File[] files = file.listFiles();
 
@@ -81,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 empty.setVisibility(View.GONE);
                 text.setVisibility(View.GONE);
                 if (singleFile.isDirectory()) {
-                    arrayList.addAll(findPdf(singleFile));
+                    arrayList.addAll(findFile(singleFile));
                 } else {
                     if (singleFile.getName().endsWith("."+fileEnd.toLowerCase())) {
                         arrayList.add(singleFile);
@@ -92,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         return arrayList;
     }
 
-    private void displayPdf() {
+    private void displayFile() {
         text = findViewById(R.id.text);
         empty = findViewById(R.id.empty);
         na = findViewById(R.id.NA);
@@ -100,10 +104,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        List<File> pdfList = new ArrayList<>(findPdf(Environment.getExternalStorageDirectory()));
-        PdfAdapter pdfAdapter = new PdfAdapter(this, pdfList);
-        recyclerView.setAdapter(pdfAdapter);
-//        horizontalScrollView = findViewById(R.id.horizontalView);
+        List<File> pdfList = new ArrayList<>(findFile(Environment.getExternalStorageDirectory()));
+        FileAdapter fileAdapter = new FileAdapter(this, pdfList,this);
+        recyclerView.setAdapter(fileAdapter);
 
     }
 
@@ -124,217 +127,217 @@ public class MainActivity extends AppCompatActivity {
 
         if(item.getItemId() == R.id.jpg){
             fileEnd = "JPG";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JPG files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.jpeg){
             fileEnd = "JPEG";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JPEG files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.png){
             fileEnd = "PNG";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("PNG files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.svg){
             fileEnd = "SVG";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("SVG files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.gif){
             fileEnd = "GIF";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("GIF files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.mp4){
             fileEnd = "MP4";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("MP4 files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.mp3){
             fileEnd = "MP3";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("MP3 files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.amr){
             fileEnd = "AMR";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("AMR files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.aac){
             fileEnd = "AAC";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("AAC files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.aax){
             fileEnd = "AAX";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("AAX files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.aiff){
             fileEnd = "AIFF";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("AIFF files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.opus){
             fileEnd = "OPUS";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("OPUS files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.pdf){
             fileEnd = "PDF";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("PDF files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.doc){
             fileEnd = "DOCX";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("DOC files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.ppt){
             fileEnd = "PPTX";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("PPT files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.xls){
             fileEnd = "XLSX";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("XLS files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.csv){
             fileEnd = "CSV";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("CSV files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.txt){
             fileEnd = "TXT";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("TXT files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.zip){
             fileEnd = "ZIP";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("ZIP files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.tar){
             fileEnd = "TAR";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("TAR files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.rar){
             fileEnd = "RAR";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("RAR files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.ai){
             fileEnd = "AI";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("AI files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.ps){
             fileEnd = "PS";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("PS files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.html){
             fileEnd = "HTML";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("HTML files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.css){
             fileEnd = "CSS";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("CSS files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.js){
             fileEnd = "JS";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JS files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.java){
             fileEnd = "JAVA";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JAVA files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.py){
             fileEnd = "PYTHON";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("PYTHON files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.json){
             fileEnd = "JSON";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("JSON files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.exe){
             fileEnd = "EXE";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText("EXE files are displayed");
             na.setVisibility(View.GONE);
         }
         if(item.getItemId() == R.id.noExtFile){
             fileEnd = "";
-            displayPdf();
+            displayFile();
             selected.setVisibility(View.VISIBLE);
             selected.setText(".No Extension files are displayed");
             na.setVisibility(View.GONE);
@@ -363,4 +366,71 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
+    @Override
+    public void onPdfSelected(File file) {
+        Uri uri = FileProvider.getUriForFile(this, MainActivity.this.getApplicationContext().getPackageName() + ".provider",file);
+        Intent pdfIntent = new Intent(Intent.ACTION_VIEW);
+        switch (fileEnd) {
+            case "JPG":
+            case "JPEG":
+            case "PNG":
+            case "SVG":
+            case "GIF":
+                pdfIntent.setDataAndType(uri, "image/*");
+                break;
+            case "MP4":
+            case "MP3":
+            case "AMR":
+            case "AAC":
+            case "AAX":
+            case "AIFF":
+            case "OPUS":
+                pdfIntent.setDataAndType(uri, "audio/x-wav");
+                break;
+            case "PDF":
+                pdfIntent.setDataAndType(uri, "application/pdf");
+                break;
+            case "DOCX":
+                pdfIntent.setDataAndType(uri, "application/msword");
+                break;
+            case "PPTX":
+                pdfIntent.setDataAndType(uri, "application/vnd.ms-powerpoint");
+                break;
+            case "XLSX":
+                pdfIntent.setDataAndType(uri, "application/vnd.ms-excel");
+                break;
+            case "CSV":
+            case "PS":
+            case "AI":
+            case "EXE":
+            case "":
+                pdfIntent.setDataAndType(uri, "*/*");
+                break;
+            case "TXT":
+            case "HTML":
+            case "CSS":
+            case "JS":
+            case "JAVA":
+            case "PYTHON":
+            case "JSON":
+                pdfIntent.setDataAndType(uri, "text/plain");
+                break;
+            case "ZIP":
+                pdfIntent.setDataAndType(uri, "application/zip");
+                break;
+            case "TAR":
+                pdfIntent.setDataAndType(uri, "application/tar");
+                break;
+            case "RAR":
+                pdfIntent.setDataAndType(uri, "application/rar");
+                break;
+        }
+
+        pdfIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        try {
+            startActivity(pdfIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(MainActivity.this, "No Applications found to open this format file. You can download relevant application to view this file format", Toast.LENGTH_LONG).show();
+        }
+    }
 }

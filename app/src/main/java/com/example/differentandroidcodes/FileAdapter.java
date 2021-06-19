@@ -12,24 +12,26 @@ import java.util.List;
 
 import static com.example.differentandroidcodes.MainActivity.fileEnd;
 
-public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
+public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
 
     private final Context context;
-    private final List<File> pdfFiles;
+    private final List<File> files;
+    private final onFileSelectListener onFileSelectListener;
     @NonNull
     @Override
-    public PdfViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new PdfViewHolder(LayoutInflater.from(context).inflate(R.layout.element_holder,parent,false));
+    public FileViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new FileViewHolder(LayoutInflater.from(context).inflate(R.layout.element_holder,parent,false));
     }
 
-    public PdfAdapter(Context context, List<File> pdfFiles) {
+    public FileAdapter(Context context, List<File> files, onFileSelectListener onFileSelectListener) {
         this.context = context;
-        this.pdfFiles = pdfFiles;
+        this.files = files;
+        this.onFileSelectListener = onFileSelectListener;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PdfViewHolder holder, int position) {
-            holder.tvName.setText(pdfFiles.get(position).getName());
+    public void onBindViewHolder(@NonNull FileViewHolder holder, int position) {
+            holder.tvName.setText(files.get(position).getName());
             holder.tvName.setSelected(true);
         switch (fileEnd) {
             case "JPG":
@@ -44,7 +46,7 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
             case "SVG":
                 holder.imageView.setImageResource(R.drawable.svg);
                 break;
-            case "gif":
+            case "GIF":
                 holder.imageView.setImageResource(R.drawable.gif);
                 break;
             case "MP4":
@@ -123,15 +125,18 @@ public class PdfAdapter extends RecyclerView.Adapter<PdfViewHolder> {
                 holder.imageView.setImageResource(R.drawable.exe);
                 break;
             case "":
-                holder.imageView.setImageResource(R.drawable.noexe);
+                holder.imageView.setImageResource(R.drawable.documentempty);
                 break;
         }
 
-   }
+        holder.container.setOnClickListener(v -> onFileSelectListener.onPdfSelected(files.get(position)));
+
+
+    }
 
     @Override
     public int getItemCount() {
-        return pdfFiles.size();
+        return files.size();
     }
 
 
