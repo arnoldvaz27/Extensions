@@ -42,7 +42,7 @@ Before making any changes, we recommend opening an issue (if one doesn't already
 2.  Read The [Documentation for using Github](https://docs.github.com/en)
        
     
-## Immediate Acceptance of the code ![Software to use](https://img.shields.io/badge/Extensions-Acceptance%20of%20code-orange) 
+## Immediate Acceptance of the code ![Acceptance](https://img.shields.io/badge/Extensions-Acceptance%20of%20code-orange) 
 
 Requests that include the following features will be given priority ![Software to use](https://img.shields.io/badge/Feature%20Updation-As%20per%20the%20need-red) 
 
@@ -64,6 +64,6 @@ Requests that include the following features will be given priority ![Software t
 
 2. Pull requests can be send from [this link](https://github.com/arnoldvaz27/Extensions/pulls)
 
-## License under MIT ![License](https://img.shields.io/badge/License-MIT-red)
+## License under MIT ![License](https://img.shields.io/badge/License-MIT-red)    ![Copyright](https://img.shields.io/badge/Copyright%202021-Arnold%20Alwyn%20Vaz-red)
 
 Check [here](https://github.com/arnoldvaz27/Extensions/blob/master/LICENSE) for more details 
