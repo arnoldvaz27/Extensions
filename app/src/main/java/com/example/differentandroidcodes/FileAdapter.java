@@ -10,12 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.File;
 import java.util.List;
 
-import static com.example.differentandroidcodes.MainActivity.fileEnd;
+import static com.example.differentandroidcodes.FileDisplayed.fileEnd;
+
 
 public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
 
     private final Context context;
     private final List<File> files;
+
     private final onFileSelectListener onFileSelectListener;
     @NonNull
     @Override
@@ -120,6 +122,9 @@ public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
                 break;
             case "JSON":
                 holder.imageView.setImageResource(R.drawable.json);
+                break;
+            case "XML":
+                holder.imageView.setImageResource(R.drawable.xml);
                 break;
             case "EXE":
                 holder.imageView.setImageResource(R.drawable.exe);

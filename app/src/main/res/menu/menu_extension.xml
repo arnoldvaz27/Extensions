@@ -136,6 +136,9 @@
             <item android:title="@string/json"
                 android:id="@+id/json"
                 app:showAsAction="never"/>
+            <item android:title="@string/xml"
+                android:id="@+id/xml"
+                app:showAsAction="never"/>
         </menu>
     </item>
     <item android:title="@string/windows_files"
