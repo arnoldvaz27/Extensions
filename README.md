@@ -3,6 +3,8 @@
 Extension is an open source project where people can contribute as per their knowledge of Android Studio, Java Programming and Github.
 
 ![OpenSource](https://img.shields.io/badge/Open%20Source-All%20pull%20requests%20will%20be%20verified%20and%20accepted-brightgreen)
+
+
 ![Thank you](https://img.shields.io/badge/Arnold%20Vaz-Thank%20you%20for%20visiting%20this%20open%20source%20project%20repository-red)
 
 ## About ![About](https://img.shields.io/badge/Extensions-About-orange)
@@ -19,7 +21,7 @@ Extensions is an Android Java based application that can be used to get all the 
 ## Code reviews ![Code Review](https://img.shields.io/badge/Extensions-Code-blueviolet)
 
 All submissions, including submissions by project members, require review. We use Github Pull Requests (PRs) for this purpose. We recommend you read this guide if you haven't created a Pull Request before.
-Pull request gide  https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+[Pull request guide](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 Before making any changes, we recommend opening an issue (if one doesn't already exist) and discussing your proposed changes. This way, we can give you feedback and validated the proposed changes. If the changes are minor (simple bug fix of documentation fix), then feel free to open a PR without discussion.
 
@@ -35,13 +37,10 @@ Before making any changes, we recommend opening an issue (if one doesn't already
 
 ## Tools needed for development ![Software to use](https://img.shields.io/badge/Software-Android%20Studio-dark%20green) ![Software to use](https://img.shields.io/badge/Language-Java-dark%20green) ![Software to use](https://img.shields.io/badge/Version%20Control-Github-yellowgreen)
 
-1.  Read The Documentation for using Android Studio 
-    https://developer.android.com/
-2.  Read The Documentation for using Java 
-    https://www.java.com/en/
-2.  Read The Documentation for using Github 
-    https://docs.github.com/en
-    
+1.  Read The [Documentation for using Android Studio](https://developer.android.com/)
+2.  Read The [Documentation for using Java](https://www.java.com/en/)
+2.  Read The [Documentation for using Github](https://docs.github.com/en)
+       
     
 ## Immediate Acceptance of the code ![Software to use](https://img.shields.io/badge/Extensions-Acceptance%20of%20code-orange) 
 
@@ -49,21 +48,22 @@ Requests that include the following features will be given priority ![Software t
 
 1.  Accessing the external storage like SD Card, USB Pen Drive, USB Hard Disk
 2.  Smooth UI Layouts
-3.  Above Rules only applicable to features. Bugs and Suggestion are the Top priority without any rules.
+3.  Adding more extensions for displaying files
+4.  Above Rules only applicable to features. Bugs and Suggestion are the Top priority without any rules.
     
     
 ## Support ![Support](https://img.shields.io/badge/Extensions-Support-green)
 
-1. Follow my github account - https://github.com/arnoldvaz27
-2. Visit my LinkTree Profile to get more links for discussion- https://linktr.ee/arnoldvaz
+1. Follow my [github account](https://github.com/arnoldvaz27)
+2. Visit my [LinkTree Profile](https://linktr.ee/arnoldvaz) to get more links for discussion 
+3. Visit my Website - [Programming Drive](https://programmingdrive.blogspot.com/)
 
-## Opening an issue, bug or suggestion ![Support](https://img.shields.io/badge/Extensions-Issue%2C%20Bug%20or%20Suggestion-blue)
+## Opening an issue, bug or suggestion ![Issue](https://img.shields.io/badge/Extensions-Issue%2C%20Bug%20or%20Suggestion-blue)
 
-1. You can also post bug reports and feature requests (only) in this repositoris GitHub issues section. https://github.com/arnoldvaz27/Extensions/issues
+1. You can also post bug reports and feature requests (only) in this repositoris [GitHub issues section](https://github.com/arnoldvaz27/Extensions/issues)
 
-2. Pull requests can be send from this link
-https://github.com/arnoldvaz27/Extensions/pulls
+2. Pull requests can be send from [this link](https://github.com/arnoldvaz27/Extensions/pulls)
 
-## License under MIT ![Support](https://img.shields.io/badge/License-MIT-red)
+## License under MIT ![License](https://img.shields.io/badge/License-MIT-red)
 
-Check here for more details https://github.com/arnoldvaz27/Extensions/blob/master/LICENSE
+Check [here](https://github.com/arnoldvaz27/Extensions/blob/master/LICENSE) for more details 
