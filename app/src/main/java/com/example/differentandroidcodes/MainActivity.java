@@ -367,7 +367,7 @@ public class MainActivity extends AppCompatActivity implements onFileSelectListe
     }
 
     @Override
-    public void onPdfSelected(File file) {
+    public void onFileSelected(File file) {
         Uri uri = FileProvider.getUriForFile(this, MainActivity.this.getApplicationContext().getPackageName() + ".provider",file);
         Intent pdfIntent = new Intent(Intent.ACTION_VIEW);
         switch (fileEnd) {

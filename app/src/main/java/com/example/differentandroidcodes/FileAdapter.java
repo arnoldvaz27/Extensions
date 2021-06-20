@@ -129,7 +129,7 @@ public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
                 break;
         }
 
-        holder.container.setOnClickListener(v -> onFileSelectListener.onPdfSelected(files.get(position)));
+        holder.container.setOnClickListener(v -> onFileSelectListener.onFileSelected(files.get(position)));
 
 
     }
