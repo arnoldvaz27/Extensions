@@ -45,10 +45,11 @@ Before making any changes, we recommend opening an issue (if one doesn't already
     
 ## Immediate Acceptance of the code ![Software to use](https://img.shields.io/badge/Extensions-Acceptance%20of%20code-orange) 
 
-Requests that include the following features will be given priority ![Software to use](https://img.shields.io/badge/Feature%20Updation-As%20per%20the%20need-red) *Only applicable to features. Bugs and Suggestion are Top priority without any rules.
+Requests that include the following features will be given priority ![Software to use](https://img.shields.io/badge/Feature%20Updation-As%20per%20the%20need-red) 
 
 1.  Accessing the external storage like SD Card, USB Pen Drive, USB Hard Disk
 2.  Smooth UI Layouts
+3.  Above Rules only applicable to features. Bugs and Suggestion are the Top priority without any rules.
     
     
 ## Support ![Support](https://img.shields.io/badge/Extensions-Support-green)
