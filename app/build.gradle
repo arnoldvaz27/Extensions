@@ -6,7 +6,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.differentstylebuttons"
+        applicationId "com.example.extensions"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -39,11 +39,8 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
-
     // For Card view
     implementation 'androidx.cardview:cardview:1.0.0'
-
-
 
     implementation 'com.karumi:dexter:6.2.2' //for runtime permission
 
