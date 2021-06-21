@@ -13,9 +13,9 @@ Extensions is an Android Java based application that can be used to get all the 
 
 ## Features ![Features](https://img.shields.io/badge/Extensions-Features-blue)
 
-1.	Get all the files related to the selected extension from the mobile device
-2.	All the files are displayed at one place
-3.	Files can be viewed when clicking on them.
+1.  Get all the files related to the selected extension from the mobile device
+2.  All the files are displayed at one place
+3.  Files can be viewed when clicking on them
 4.  It can display all the hidden files from the device that cannot be displayed in the normal file manager or any application.
 
 ## Code reviews ![Code Review](https://img.shields.io/badge/Extensions-Code-blueviolet)
