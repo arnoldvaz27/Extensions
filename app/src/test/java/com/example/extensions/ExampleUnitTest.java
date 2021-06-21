@@ -1,4 +1,4 @@
-package com.example.differentandroidcodes;
+package com.example.extensions;
 
 import org.junit.Test;
 

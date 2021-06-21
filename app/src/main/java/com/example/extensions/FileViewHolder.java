@@ -1,4 +1,4 @@
-package com.example.differentandroidcodes;
+package com.example.extensions;
 
 import android.view.View;
 import android.widget.ImageView;

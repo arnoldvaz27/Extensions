@@ -1,4 +1,4 @@
-package com.example.differentandroidcodes;
+package com.example.extensions;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.File;
 import java.util.List;
 
-import static com.example.differentandroidcodes.FileDisplayed.fileEnd;
+import static com.example.extensions.FileDisplayed.fileEnd;
 
 
 public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
