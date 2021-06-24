@@ -46,4 +46,20 @@
     <string name="file_name">File name</string>
     <string name="xml">XML</string>
     <string name="splash_screen">SplashScreen</string>
+    <string name="msDot">Ms Dot</string>
+    <string name="msWbk">Ms Wbk</string>
+    <string name="msDocm">Ms Docm</string>
+    <string name="msDotx">Ms Dotx</string>
+    <string name="msDotm">Ms Dotm</string>
+    <string name="msDocb">Ms Docb</string>
+    <string name="msPot">Ms Pot</string>
+    <string name="msPps">Ms Pps</string>
+    <string name="msPptm">Ms Pptm</string>
+    <string name="msPotx">Ms Potx</string>
+    <string name="msPotm">Ms Potm</string>
+    <string name="msPpam">Ms Ppam</string>
+    <string name="msPpsx">Ms Ppsx</string>
+    <string name="msPpsm">Ms Ppsm</string>
+    <string name="msSldx">Ms Sldx</string>
+    <string name="msSldm">Ms Sldm</string>
 </resources>

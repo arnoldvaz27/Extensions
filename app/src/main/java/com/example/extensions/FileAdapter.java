@@ -90,6 +90,54 @@ public class FileAdapter extends RecyclerView.Adapter<FileViewHolder> {
             case "TXT":
                 holder.imageView.setImageResource(R.drawable.txt);
                 break;
+            case "MSDOT":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSWBK":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSDOCM":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSDOTX":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSDOTM":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSDOCB":
+                holder.imageView.setImageResource(R.drawable.word);
+                break;
+            case "MSPOT":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPPS":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPPTM":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPOTX":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPOTM":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPPSX":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPPSM":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSPPAM":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSSLDX":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
+            case "MSSLDM":
+                holder.imageView.setImageResource(R.drawable.powerpoint);
+                break;
             case "ZIP":
                 holder.imageView.setImageResource(R.drawable.zip);
                 break;

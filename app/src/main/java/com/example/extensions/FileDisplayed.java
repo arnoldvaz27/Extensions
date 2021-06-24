@@ -225,6 +225,120 @@ public class FileDisplayed extends AppCompatActivity implements onFileSelectList
             selected.setText("TXT files are displayed");
             na.setVisibility(View.GONE);
         }
+        if(item.getItemId() == R.id.msDot){
+            fileEnd = "MSDOT";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS DOT files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msWbk){
+            fileEnd = "MSWBK";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS WBK files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msDocm){
+            fileEnd = "MSDOCM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS DOCM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msDotx){
+            fileEnd = "MSDOTX";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS DOTX files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msDotm){
+            fileEnd = "MSDOTM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS DOTM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msDocb){
+            fileEnd = "MSDOCB";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS DOCB files are displayed");
+            na.setVisibility(View.GONE);
+        }
+
+        if(item.getItemId() == R.id.msPot){
+            fileEnd = "MSPOT";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS POT files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPps){
+            fileEnd = "MSPPS";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS PPS files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPptm){
+            fileEnd = "MSPPTM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS PPTM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPotx){
+            fileEnd = "MSPOTX";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS POTX files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPotm){
+            fileEnd = "MSPOTM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS POTM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPpsx){
+            fileEnd = "MSPPSX";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS PPSX files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPpsm){
+            fileEnd = "MSPPSM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS PPSM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msPpam){
+            fileEnd = "MSPPAM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS PPAM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msSldx){
+            fileEnd = "MSSLDX";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS SLDX files are displayed");
+            na.setVisibility(View.GONE);
+        }
+        if(item.getItemId() == R.id.msSldm){
+            fileEnd = "MSSLDM";
+            displayFile();
+            selected.setVisibility(View.VISIBLE);
+            selected.setText("MS SLDM files are displayed");
+            na.setVisibility(View.GONE);
+        }
+
         if(item.getItemId() == R.id.zip){
             fileEnd = "ZIP";
             displayFile();

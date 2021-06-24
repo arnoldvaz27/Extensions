@@ -82,6 +82,67 @@
             <item android:title="@string/txt"
                 android:id="@+id/txt"
                 app:showAsAction="never"/>
+            <item android:title="Ms Word Files"
+                android:id="@+id/msWordFiles"
+                app:showAsAction="never">
+                <menu>
+                    <item android:title="@string/msDot"
+                        android:id="@+id/msDot"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msWbk"
+                        android:id="@+id/msWbk"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msDocm"
+                        android:id="@+id/msDocm"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msDotx"
+                        android:id="@+id/msDotx"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msDotm"
+                        android:id="@+id/msDotm"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msDocb"
+                        android:id="@+id/msDocb"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+            <item android:title="Ms Powerpoint Files"
+                android:id="@+id/msPowerpointFiles"
+                app:showAsAction="never">
+                <menu>
+                    <item android:title="@string/msPot"
+                        android:id="@+id/msPot"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPps"
+                        android:id="@+id/msPps"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPptm"
+                        android:id="@+id/msPptm"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPotx"
+                        android:id="@+id/msPotx"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPotm"
+                        android:id="@+id/msPotm"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPpsx"
+                        android:id="@+id/msPpsx"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPpsm"
+                        android:id="@+id/msPpsm"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msPpam"
+                        android:id="@+id/msPpam"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msSldx"
+                        android:id="@+id/msSldx"
+                        app:showAsAction="never"/>
+                    <item android:title="@string/msSldm"
+                        android:id="@+id/msSldm"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+
         </menu>
     </item>
     <item android:title="@string/compress_files"
